@@ -1,4 +1,4 @@
-streamlit
-tensorflow
+streamlit==1.35.0 # You can use the latest version you developed with
+tensorflow==2.16.1 # Use a compatible TensorFlow version
 numpy
 Pillow

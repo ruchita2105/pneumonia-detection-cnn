@@ -17,7 +17,7 @@ uploaded_file = st.file_uploader("Choose a CXR image...", type=["jpg", "jpeg", "
 
 if uploaded_file is not None:
     # Open and display the uploaded image
-    img = Image.open(uploaded_file)
+    img = Image.open(uploaded_file).convert("RGB") 
     st.image(img, caption='Uploaded CXR Image.', use_column_width=True)
 
     # Preprocess the image for the model
